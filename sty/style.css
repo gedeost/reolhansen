@@ -8,7 +8,7 @@ body{
 	margin: 0 auto;	/* first value affects top and bottom side, second value is left and right side */
 	background-color: #d4e1f7;
 	padding: 0 20px 20px 20px; /* top right bottom left */
-	border: 5px solid black;
+	/*border: 5px solid black;*/
 }
 img{
 	/*max-width: 90px;*/
