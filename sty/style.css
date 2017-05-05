@@ -6,7 +6,7 @@ html {
 body{
 	max-width: 800px;	/* set max width of body (resizes to fit smaller screens) */
 	margin: 0 auto;	/* first value affects top and bottom side, second value is left and right side */
-	background-color: #FF9500;
+	background-color: #d4e1f7;
 	padding: 0 20px 20px 20px; /* top right bottom left */
 	border: 5px solid black;
 }
