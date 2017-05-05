@@ -5,18 +5,51 @@
 		<title>Reolhansen</title>
 		<link href='sty/style.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
 	</head>
 	<body>
-		<h1> Reolhansen! </h1>
-		<img src='img/reol1.jpg' alt='Reol'>
-		<p> This is a test website for implementing the javascript app </p>
-		<p> My goals are to </p>
-			<ul>
-				<li> develop the <a href='https://en.wikipedia.org/wiki/JavaScript'> javascript</a> app </li>
-				<li> implement it on the website </li>
-				<li> test it thoroughly </li>
-			</ul>
-		<button> Change user </button> <button> New button </button>
-		<script src='scr/main.js'></script>
+		<div class='row'>
+			<h4 class='col-sm-3 text-left'> Number of shelves: </h4>
+			<h4 class='col-sm-9'>
+				<button onclick="updateRack('shelf',2);" class='shelf-button' id='shelf2'> 2 </button>
+				<button onclick="updateRack('shelf',3);" class='shelf-button' id='shelf3'> 3 </button>
+				<button onclick="updateRack('shelf',4);" class='shelf-button' id='shelf4'> 4 </button>
+				<button onclick="updateRack('shelf',5);" class='shelf-button' id='shelf5'> 5 </button>
+				<button onclick="updateRack('shelf',6);" class='shelf-button' id='shelf6'> 6 </button>
+			</h4>
+			<h4 class='col-sm-3 text-left'> Shelf height [mm]: </h4>
+			<h4 class='col-sm-9'>
+				<button onclick="updateRack('height',300);" class='height-button' id='height300'> 300 </button>
+				<button onclick="updateRack('height',450);" class='height-button' id='height450'> 450 </button>
+				<button onclick="updateRack('height',500);" class='height-button' id='height500'> 500 </button>
+				<button onclick="updateRack('height',600);" class='height-button' id='height600'> 600 </button>
+			</h4>
+			<h4 class='col-sm-3 text-left'> Choose type: </h4>
+			<h4 class='col-sm-9'>
+				<button onclick="updateRack('type',1);" class='type-button' id='type1'> Single </button>
+				<button onclick="updateRack('type',2);" class='type-button' id='type2'> Double </button>
+			</h4>
+			<h4 class='col-sm-3 text-left'> Add parts: </h4>
+			<h4 class='col-sm-9'> 180 cm:
+				<span>
+					<button onclick="updateRack('parts',-180);" class='parts-button' id='minus180'> Minus </button>
+					<button onclick="updateRack('parts',180);"  class='parts-button' id='plus180'> Plus </button>
+				</span>
+			</h4>
+			<h4 class='col-sm-3 text-left'></h4>
+			<h4 class='col-sm-9'> 270 cm:
+				<span>
+					<button onclick="updateRack('parts',-270);" class='parts-button' id='minus270'> Minus </button>
+					<button onclick="updateRack('parts',270);"  class='parts-button' id='plus270'> Plus </button>
+				</span>
+			</h4>
+			
+			<h4 class='col-sm-3 text-left'> Length: </h4>
+			<h4 class='col-sm-2 text-left' id='length'> 0 </h4>
+			<h4 class='col-sm-7'> <button onclick='resetRack();'> Reset </button> </h4>
+		</div>
+			<img id='myImage' />
+			<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+			<script src='scr/main.js'></script>
 	</body>
 </html>
