@@ -4,30 +4,25 @@ html {
 	background-color: #A563E7;
 }
 body{
-	width: 600px;
+	max-width: 800px;	/* set max width of body (resizes to fit smaller screens) */
 	margin: 0 auto;	/* first value affects top and bottom side, second value is left and right side */
 	background-color: #FF9500;
 	padding: 0 20px 20px 20px; /* top right bottom left */
 	border: 5px solid black;
 }
-h1 {
-	margin: 0;
-	padding: 20px 0; /* top bottom */
-	color: #00539F;
-	text-shadow: 3px 3px 1px black; /* horizontal offset, vertical offset, blur radius, colour */
-	font-size: 60px;
-	text-align: center;
-}
-p,li{
-	font-size: 16px;
-	line-height: 2;
-	letter-spacing: 1px;
-}
 img{
-	width: 550px;
-	display: block;
+	/*max-width: 90px;*/
 	margin: 0 auto;
 }
-a:hover {
-	color: pink;
+button{
+	background-color: lightgray;
+}
+button:hover {
+	background-color: gray;
+}
+div{
+	border: 1px solid black;
+}
+.overlays{
+	position: absolute;
 }
