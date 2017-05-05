@@ -1,7 +1,7 @@
 html {
 	font-size: 10px /* px = pixels */
 	font-family: placeholder: 'Roboto', sans-serif;
-	background-color: #A563E7;
+	background-color: #d4e1f7;
 }
 body{
 	max-width: 800px;	/* set max width of body (resizes to fit smaller screens) */
